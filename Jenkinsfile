@@ -8,12 +8,13 @@ stages {
     stage('SCM'){
         steps{
           echo "git pull my code step1"
-	  git 'https://github.com/krishna-gbu/myjenkinspipeline.git'
+	  https://github.com/krishna-gbu/simple-java-maven-app.git
 	}
     }
-    stage('Deploy'){
+    stage('Build'){
       steps{
-         echo "deplying my code"       
+         echo "building my code" 
+	 sh 'mvn clean package'
    
       }
   
