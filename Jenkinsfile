@@ -19,9 +19,11 @@ stages {
       }
   
     }
-    stage('Test'){
+    stage('Deploy'){
       steps{
-        echo " testing my code finall"
+        echo " deploy my code finall"
+	sh 'sudo yum install java -y'
+	sh 'java -jar target/*.jar'
       }
     }
 
