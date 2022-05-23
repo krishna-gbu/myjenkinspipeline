@@ -8,14 +8,13 @@ stages {
     stage('SCM'){
         steps{
           echo "git pull my code step1"
-	  https://github.com/krishna-gbu/simple-java-maven-app.git
+	  git 'https://github.com/krishna-gbu/simple-java-maven-app.git'
 	}
     }
     stage('Build'){
       steps{
          echo "building my code" 
 	 sh 'mvn clean package'
-   
       }
   
     }
