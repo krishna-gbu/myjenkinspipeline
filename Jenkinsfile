@@ -9,6 +9,7 @@ stages {
         steps{
           echo "git pull my code step1"
 	  git 'https://github.com/krishna-gbu/simple-java-maven-app.git'
+	  sh 'sudo yum install maven -y'
 	}
     }
     stage('Build'){
