@@ -23,6 +23,12 @@ stages {
       }
     }
 
+    stage('deploy test'){
+      steps{
+         echo "deploying testing"
+      }
+    }
+
 
 
 }
