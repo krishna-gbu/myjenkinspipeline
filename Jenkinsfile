@@ -11,14 +11,14 @@ stages {
 	}
     }
     stage('Deploy'){
-      step{
+      steps{
          echo "deplying my code"       
    
       }
   
     }
     stage('Test'){
-      step{
+      steps{
         echo " testing my code finall"
       }
     }
